@@ -1,7 +1,7 @@
 # 
 
 ## Model
-www.msaez.io/#/courses/cna-full/f34b48e0-ff3d-11ef-ada3-31b936e467fd/pub-sub-2022
+www.msaez.io/#/93044188/storming/labshoppubsub-ex-seungwon
 
 ## Before Running Services
 ### Make sure there is a Kafka server running
@@ -22,6 +22,7 @@ See the README.md files inside the each microservices directory:
 
 - order
 - inventory
+- delivery
 
 
 ## Run API Gateway (Spring Gateway)
@@ -33,11 +34,14 @@ mvn spring-boot:run
 ## Test by API
 - order
 ```
- http :8088/orders id="id"productId="productId"qty="qty"customerId="customerId"amount="amount"
+ http :8088/orders id="id"productId="productId"qty="qty"customerId="customerId"amount="amount"address="address"
 ```
 - inventory
 ```
  http :8088/inventories id="id"stock="stock"
+```
+- delivery
+```
 ```
 
 
